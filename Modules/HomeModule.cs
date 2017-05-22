@@ -7,7 +7,7 @@ namespace Shipping
   {
     public HomeModule()
     {
-      Get["/"] = _ => "Hello World!";
+      Get["/"] = _ => View["parcel_form.cshtml"];
     }
   }
 }
