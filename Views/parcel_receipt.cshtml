@@ -1,0 +1,14 @@
+@{
+  Layout="Shared/_Layout.cshtml";
+}
+
+<div class="container">
+  <p>Your package dimensions are:</p>
+  <ul>
+    <li>Length: @Model.Length</li>
+    <li>Width: @Model.Width</li>
+    <li>Height: @Model.Height</li>
+  </ul>
+  <p>Your package's volume is: @Model.GetVolume()</p>
+  <p>Cost to ship: @Model.GetShippingCost()</p>
+</div>

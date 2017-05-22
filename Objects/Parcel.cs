@@ -1,4 +1,4 @@
-namespace Parcel.Objects
+namespace ParcelObjects
 {
   public class Parcel
   {
@@ -13,6 +13,15 @@ namespace Parcel.Objects
       Width = width;
       Height = height;
       Weight = weight;
+    }
+
+    public int GetVolume()
+    {
+      return Length * Width * Height;
+    }
+    public int GetShippingCost()
+    {
+      return (Length/2) + (Width * 3) + (Height - 50);
     }
   }
 }
